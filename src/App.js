@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Header } from './components/Header.js'
 import './App.css';
 import ProfilesList from './components/Profiles.js'
+import { Footer } from './components/footer.js'
 
 class App extends Component {
   state = {dinosaurs: []}
@@ -25,6 +26,7 @@ class App extends Component {
             <ProfilesList dinosaurs={this.state.dinosaurs}/>
           </ul>
         </main>
+        <Footer />
       </div>
     );
   }
